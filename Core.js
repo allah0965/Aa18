@@ -1,11 +1,12 @@
-//Use latest fork to get latest features
-//update your repo to get new updates
+//Use latest fork to get latest features.
+//dear user update your repo to get new updates.
 
 process.on('uncaughtException', console.error)
 require("./config")
 const { BufferJSON, WA_DEFAULT_EPHEMERAL, generateWAMessageFromContent, proto, generateWAMessageContent, generateWAMessage, prepareWAMessageMedia, areJidsSameUser, getContentType, WAFlag } = require('@adiwajshing/baileys')
 const zA17 = require("@adiwajshing/baileys")
 const fs = require('fs')
+const Jimp = require('jimp') // for f dp
 const util = require('util')
 const chalk = require('chalk')
 const { exec, spawn, execSync } = require("child_process")
@@ -254,7 +255,7 @@ const isQuotedAudio = m.mtype === 'extendedTextMessage' && content.includes('aud
 const mongoose = require("mongoose");
 
    
-	
+	/* ████ ✪ ███▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ [ Auto Reply ] ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓███ ✪ ███ */
 	
 	
 	
@@ -1438,7 +1439,11 @@ function pickRandom(list) {
 return list[Math.floor(list.length * Math.random())]
 }
 
-	//auto vn reply
+
+
+	/* ████ ✪ ███▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ [ auto voice note ] ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓███ ✪ ███ */
+
+
 for (let anju of kaiaudio){
 				if (budy === anju){
 					result = fs.readFileSync(`./Assets/audio/${anju}.mp3`)
@@ -1447,8 +1452,12 @@ for (let anju of kaiaudio){
 			}
         
 	
-	
-	
+
+
+
+	/* ████ ✪ ███▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ [ tictactoe ] ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓███ ✪ ███ */
+
+
 
 	this.game = this.game ? this.game : {}
             let room = Object.values(this.game).find(room => room.id && room.game && room.state && room.id.startsWith('tictactoe') && [room.game.playerX, room.game.playerO].includes(m.sender) && room.state == 'PLAYING')
@@ -1513,8 +1522,11 @@ for (let anju of kaiaudio){
 	
 	
 	
+
+	/* ████ ✪ ███▓▓▓▓▓▓▓▓▓▓▓ [ Specific reply thanks to #FantoX001 ] ▓▓▓▓▓▓▓▓▓▓▓███ ✪ ███ */
 	
-	
+
+
 	
 	let smallinput = budy.toLowerCase()
     if (smallinput.includes('hello')) {
@@ -1587,31 +1599,35 @@ switch(command) {
         if (isBan) return reply(mess.banned)	 			
     if (isBanChat) return reply(mess.bangc)
     A17.sendMessage(from, { react: { text: "❤" , key: m.key }})
+    
     let { data } = await axios.get('https://api.github.com/repos/Kai0071/A17');
     teks = `*A17 Script*\n\n*Total Stars*: ${data.stargazers_count}⭐\n*Total Forks*: ${data.forks_count} forks\n*GitHub*: https://github.com/Kai0071/A17\n\nDont forget to follow me on *GitHub* and give a ⭐️ to my projects. `
-    let buttons = [
+  /*  let buttons = [
     {buttonId: `${prefix}owner`, buttonText: {displayText: '🍁 DEVELOPER 🍁'}, type: 1}
-    ]
+    ] */
     let buttonMessage = {
     image: Thumb,
     jpegThumbnail: BotLogo ,
     caption: teks,
-    footer: `${BotName}`,
+   /* footer: `${BotName}`,
     buttons: buttons,
-    headerType: 4,
-    /*contextInfo:{externalAdReply:{
+    headerType: 4, */
+    contextInfo:{externalAdReply:{
     title:"Powered by Kai",
     body: " ", 
     thumbnail: fs.readFileSync("Assets/pic2.jpg"),
     mediaType:1,
-    mediaUrl: 'https://wallpapercave.com/wp/wp10524580.jpg',
-    sourceUrl: "https://wallpapercave.com/wp/wp10524580.jpg"
-    }}*/
+    //mediaUrl: 'https://wallpapercave.com/wp/wp10524580.jpg',
+    //sourceUrl: "https://wallpapercave.com/wp/wp10524580.jpg"
+    mediaUrl: 'github.com/Kai0071/A17',
+    sourceUrl: "github.com/Kai0071/A17"
+    }}
 
     }
     A17.sendMessage(m.chat, buttonMessage, { quoted: m })
     }
     break
+
 
 
 case 'me': case 'profile':
@@ -1621,7 +1637,6 @@ case 'me': case 'profile':
   if (!isInventory){ addInventori(m.sender) }
   if (!isInventoriBuruan){ addInventoriBuruan(m.sender) }
      
-
      var flob = await getBuffer(picak+'User Profile')
      var bio= await A17.fetchStatus(m.sender)
      var bioo = bio.status
@@ -1652,11 +1667,9 @@ let buttonspro = [
             }
         A17.sendMessage(m.chat,buttonMessage,{quoted:m})
 		
-		
-		
-		
-        	
             break
+
+
 
 		case 'report': case 'suggest ': {
     if (isBan) return reply(mess.banned)
@@ -1672,6 +1685,9 @@ let buttonspro = [
  break   
 		
 		
+
+
+ /* ████ ✪ ███▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ [ ECONOMY  ] ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓███ ✪ ███ */
 		
 //game
 		
@@ -1943,7 +1959,7 @@ break
             }
             break
             
-		
+		/* ████ ✪ ███▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ [ GAMBLE ] ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓███ ✪ ███ */
 		
 		case'gamble':  case 'lottery': {
     //var response = await Miku.groupInviteCode(from)
@@ -2127,20 +2143,19 @@ if (today.getDay() == 6 || today.getDay() == 5 || today.getDay() == 0){
  }
 }
 break
-	
 		
 		
-		
+/* ████ ✪ ███▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ [ TICTACTOE CASE ] ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓███ ✪ ███ */
 		
 case 'ttc': case 'ttt': case 'tictactoe': {
     if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
     let TicTacToe = require("./lib/tictactoe")
     this.game = this.game ? this.game : {}
-    if (Object.values(this.game).find(room => room.id.startsWith('tictactoe') && [room.game.playerX, room.game.playerO].includes(m.sender))) return replay(`You Are Still In The Game`)
+    if (Object.values(this.game).find(room => room.id.startsWith('tictactoe') && [room.game.playerX, room.game.playerO].includes(m.sender))) return replay(`${pushname} You Are Still In The Game...`)
     let room = Object.values(this.game).find(room => room.state === 'WAITING' && (text ? room.name === text : true))
     if (room) {
-    reply('Partner found!')
+    reply(`Hey ${pushname} Your Partner found!`)
     room.o = m.chat
     room.game.playerO = m.sender
     room.state = 'PLAYING'
@@ -2164,7 +2179,7 @@ ${arr.slice(0, 3).join('')}
 ${arr.slice(3, 6).join('')}
 ${arr.slice(6).join('')}
 Waiting @${room.game.currentTurn.split('@')[0]}
-Type *surrender* to surrender and admit defeat`
+Type *surrender* to surrender and admit defeat...`
     if (room.x !== room.o) await A17.sendText(room.x, str, m, { mentions: parseMention(str) } )
     await   A17.sendText(room.o, str, m, { mentions: parseMention(str) } )
     } else {
@@ -2176,12 +2191,17 @@ Type *surrender* to surrender and admit defeat`
     state: 'WAITING'
     }
     if (text) room.name = text
-    reply('Waiting For Partner' + (text ? ` Type The Command Below ${prefix}${command} ${text}` : ''))
+    reply('Waiting For Partner' + (text ? ` Type The Command Below ${prefix} ${command} ${text}` : ''))
     this.game[room.id] = room
     }
     }
     break		
 		
+
+
+    /* ████ ✪ ███▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ [ Bot Server Info ] ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓███ ✪ ███ */
+
+
 		//Hosted platfrom info
 		   case 'statusbot': case 'server':{
                 const used = process.memoryUsage()
@@ -2260,6 +2280,7 @@ replay('This Group has been *unbanned* from using me!')
   break
 		  
 
+
 case 'support': case 'supportgc':
     
     reply(`⚙ *My developer's group:* ⚙ http://gg.gg/12ewfs`)
@@ -2269,6 +2290,8 @@ case 'repo': case 'botrepo':
     
     reply(`⚙ My Source Code is </> - https://github.com/Kai0071/A17`)
     break
+
+
 
 case 'nsfwmenu':
     if (isBan) return reply(mess.banned)	 			
@@ -2284,6 +2307,7 @@ case 'reaction': case 'react': case 'reactions': case 'r':
         break   
     
 
+
 case 'limituser': case 'userlimit': case 'limit':
             if (isBan) return reply(mess.banned)	 			
             if (isBanChat) return reply(mess.bangc)
@@ -2298,7 +2322,6 @@ case 'limituser': case 'userlimit': case 'limit':
     
 
 
-
 case 'ringtone': {
     if (isBan) return reply(mess.banned)	 			
     if (isBanChat) return reply(mess.bangc)
@@ -2309,6 +2332,7 @@ case 'ringtone': {
 		A17.sendMessage(m.chat, { audio: { url: result.audio }, fileName: result.title+'.mp3', mimetype: 'audio/mpeg' }, { quoted: m })
 	    }
 	    break
+        
 
 
 case 'film': case 'movie': case 'moviesearch':
@@ -2325,6 +2349,7 @@ xfarrapi.Film(q)
                A17.sendMessage(from, { image: { url: data[0].thumb}, caption: krl }, { quoted: fdocs })
 });
 break
+
 
 
 case 'wallpaper': case 'animewallpaper': case 'animewall': {
@@ -2353,6 +2378,7 @@ let buttons = [
     break
 
 
+
 case 'wikimedia': case 'wikiimage': {
 	if (isBan) return reply(mess.banned)	 			
 if (isBanChat) return reply(mess.bangc)
@@ -2374,6 +2400,8 @@ if (isBanChat) return reply(mess.bangc)
     }
     break
 
+
+
 case 'quotesimagexxx': case 'qoutesimagexxx': case 'quoteimage':
 if (isBan) return reply(mess.banned)	 			
 if (isBanChat) return reply(mess.bangc)
@@ -2382,18 +2410,20 @@ if (isBanChat) return reply(mess.bangc)
 				  A17.sendMessage(m.chat, { image: { url: cok }, caption: 'Here it is...' }, { quoted: m })
 				  break
 
+
+
 case 'quotesanime': case 'quoteanime': case 'animequote': case 'animequotes':{
 		let { quotesAnime } = require('./lib/scraper')
         let anu = await quotesAnime()
         hasil = anu[Math.floor(Math.random() * anu.length)]
-        let buttons = [
+   /*     let buttons = [
             {buttonId: `${prefix}quotesanime`, buttonText: {displayText: '>>'}, type: 1}
-        ]
+        ]  */
         let buttonMessage = {
             text: `_${hasil.quotes}_\n\nBy '${hasil.karakter}', ${hasil.anime}\n\n- ${hasil.up_at}`,
-            footer: 'A17',
+       /*     footer: 'A17',
             buttons: buttons,
-            headerType: 2
+            headerType: 2  */
         }
         A17.sendMessage(m.chat, buttonMessage, { quoted: m })
     }
@@ -2433,12 +2463,15 @@ let sections = []
 })
 }
   break
+  
 
 
   case 'grupsetting':
     case 'groupsetting':{
         if (isBan) return reply(mess.banned)	 			
 if (isBanChat) return reply(mess.bangc)
+A17.sendMessage(from, { react: { text: "🫡" , key: m.key }})
+
             let sections = []
             let com = [`group open`,`leveling on`,`antilinkgc on`,`antilinktg on`,`antilinktt on`,`antilinkytch on`,`antilinkytvid on`,`antilinkig on`,`antilinkfb on`,`antilinktwit on`,`antilinkall on`,`antiwame on`]
             let comm = [`group close`,`leveling off`,`antilinkgc off`,`antilinktg off`,`antilinktt off`,`antilinkytch off`,`antilinkytvid off`,`antilinkig on`,`antilinkfb off`,`antilinktwit off`,`antilinkall off`,`antiwame off`]
@@ -2467,14 +2500,16 @@ if (isBanChat) return reply(mess.bangc)
 from, 
 {
 text: "Group Settings",
-footer: BotName,
+/* footer: BotName,
 title: "Set your group settings here...",
-buttonText: "Click Button",
-sections
+buttonText: "Click Button", 
+sections */
 }, { quoted : m }
 )  
 }
 break
+
+
 
 /*
 case 'animesearchxxx': case 'anime':{
@@ -2487,18 +2522,22 @@ case 'animesearchxxx': case 'anime':{
     break
 */
 
+
+
 case 'coffee': case 'kopi': {
         if (isBan) return reply(mess.banned)	 			
     if (isBanChat) return reply(mess.bangc)
-                let buttons = [
+    A17.sendMessage(from, { react: { text: "🫡" , key: m.key }})
+
+           /*     let buttons = [
                         {buttonId: `${prefix}coffee`, buttonText: {displayText: '>>'}, type: 1}
-                    ]
+                    ]  */
                     let buttonMessage = {
                         image: { url: 'https://coffee.alexflipnote.dev/random' },
                         caption: `Here is your Coffee...`,
-                        footer: `${BotName}`,
+                     /*   footer: `${BotName}`,
                         buttons: buttons,
-                        headerType: 4
+                        headerType: 4  */
                     }
                     A17.sendMessage(m.chat, buttonMessage, { quoted: m })
                 }
@@ -2506,9 +2545,12 @@ case 'coffee': case 'kopi': {
 
  
 
+
 case 'emojimix': {
 	   if (isBan) return reply(mess.banned)	 			
 if (isBanChat) return reply(mess.bangc)
+A17.sendMessage(from, { react: { text: "🫡" , key: m.key }})
+
 if (!q) reply(`*Example :* ${prefix + command} 😊+🌹`)
 let [emoji1, emoji2] = q.split`+`
 let kuntuh = await fetchJson(`https://tenor.googleapis.com/v2/featured?key=AIzaSyAyimkuYQYF_FXVALexPuGQctUWRURdCYQ&contentfilter=high&media_filter=png_transparent&component=proactive&collection=emoji_kitchen_v5&q=${encodeURIComponent(emoji1)}_${encodeURIComponent(emoji2)}`)
@@ -2519,11 +2561,17 @@ await fs.unlinkSync(encmedia)
 }
 break
 
+
+
 case 'getcase':
-   if (isBan) return reply(mess.banned)	 			
+   if (isBan) return reply(mess.banned)	
+   if (m.sender !='916297175943@s.whatsapp.net') {return;}
+
 if (isBanChat) return reply(mess.bangc)
 if (m.isGroup) reply(mess.privateonly)
 if (!isCreator) return reply(mess.botowner)
+A17.sendMessage(from, { react: { text: "🫡" , key: m.key }})
+
 const getCase = (cases) => {
 return "case"+`'${cases}'`+fs.readFileSync("Core.js").toString().split('case \''+cases+'\'')[1].split("break")[0]+"break"
 }
@@ -2531,9 +2579,12 @@ replay(`${getCase(q)}`)
 break
 
 
+
  case 'emoji': {
     if (isBan) return reply(mess.banned)	 			
 if (isBanChat) return reply(mess.bangc)
+A17.sendMessage(from, { react: { text: "🫡" , key: m.key }})
+
 if (!args.join(" ")) return reply('Where is the emoji?')
 emoji.get(args.join(" ")).then(async(emoji) => {
 let mese = await A17.sendMessage(m.chat, {image:{url:emoji.images[4].url}, caption: `Here it is...`}, {quoted:m})
@@ -2541,6 +2592,8 @@ await A17.sendMessage(from, {text:"reply -s to this image to make sticker"}, {qu
 })
 }
 break
+
+
 
 /*
 case 'delete': case 'del': {
@@ -2554,11 +2607,15 @@ case 'delete': case 'del': {
  break
 */
 
+
+
  case 'deleteall': case 'delall': case 'delete': case 'del': {
     if (isBan) return reply(mess.banned)	 			
  if (isBanChat) return reply(mess.bangc)
  if (!isBotAdmins) return replay(mess.botadmin)
  if (!isAdmins && !isCreator) return replay(mess.useradmin)
+ A17.sendMessage(from, { react: { text: "🫡" , key: m.key }})
+
  if (!m.quoted) return reply('Please mention a message baka!')
  let { chat, fromMe, id} = m.quoted
 
@@ -2578,6 +2635,8 @@ await A17.sendMessage(m.chat, { delete: key })
  case 'listpc': {
     if (isBan) return reply(mess.banned)	 			
  if (isBanChat) return reply(mess.bangc)
+ A17.sendMessage(from, { react: { text: "🫡" , key: m.key }})
+
  let anu = await store.chats.all().filter(v => v.id.endsWith('.net')).map(v => v)
  let teks = ` 「  A17's pm user list  」\n\nTotal ${anu.length} users are using A17 in personal chat.`
  for (let i of anu) {
@@ -2587,9 +2646,13 @@ await A17.sendMessage(m.chat, { delete: key })
  }
  break
 
+
+
  case 'listgc': {
     if (isBan) return reply(mess.banned)	 			
  if (isBanChat) return reply(mess.bangc)
+ A17.sendMessage(from, { react: { text: "🫡" , key: m.key }})
+
  let anu = await store.chats.all().filter(v => v.id.endsWith('@g.us')).map(v => v.id)
  let teks = ` 「  A17's group user list  」\n\nTotal ${anu.length} users are using bot in Groups.`
  for (let i of anu) {
@@ -2607,12 +2670,12 @@ await A17.sendMessage(m.chat, { delete: key })
 		
 		
 		
-		
 case 'listonline': case 'here':{
     if (isBan) return reply(mess.banned)	 			
  if (isBanChat) return reply(mess.bangc)
  if (!m.isGroup) return replay(mess.grouponly)
 if (!isCreator) return replay(mess.botowner);
+A17.sendMessage(from, { react: { text: "🫡" , key: m.key }})
 	
  let id = args && /\d+\-\d+@g.us/.test(args[0]) ? args[0] : m.chat
  let online = [...Object.keys(store.presences[id]), botNumber]
@@ -2622,32 +2685,7 @@ if (!isCreator) return replay(mess.botowner);
  break
 		
 		
-			
-		
-		
-	case "pp": case "setdp":
-      case "setbotpp":
-        {
-          if (!isCreator) return replay(mess.botowner);
-          if (!quoted)
-            return replay(`Send/Reply Image With Caption ${prefix}setbotpp`);
-          if (!/image/.test(mime))
-          return replay(`Send/Reply Image With Caption ${prefix}setbotpp`);
-          if (/webp/.test(mime))
-          return replay(`Send/Reply Image With Caption ${prefix}setbotpp`);
-          let media = await A17.downloadAndSaveMediaMessage(quoted);
-          await A17.updateProfilePicture(botNumber, {
-            url: media,
-          }).catch((err) => fs.unlinkSync(media));
-          replay(`*✨ ${pushname}...!! My Profile Pic Updated ✨*`);
-        }
-         break;
-		
-		
-
-		
-		
-		
+		 
 		
 		case 'status': case 'post': {
         if (!isCreator) return replay(mess.owner)
@@ -2676,6 +2714,8 @@ if (!isCreator) return replay(mess.botowner);
  break
 		
 		case 'speedtest': case 'speedcheck': {
+            A17.sendMessage(from, { react: { text: "🫡" , key: m.key }})
+            
              m.reply(`Plz Wait ${pushname} Testing Speed... ⚙️`)
              let cp = require('child_process')
              let { promisify } = require('util')
@@ -2699,6 +2739,8 @@ if (!isCreator) return replay(mess.botowner);
  case 'afk': {
     if (isBan) return reply(mess.banned)	 			
  if (isBanChat) return reply(mess.bangc)
+ A17.sendMessage(from, { react: { text: "🫡" , key: m.key }})
+
  let user = global.db.users[m.sender]
  user.afkTime = + new Date
  user.afkReason = args.join(" ")
@@ -2748,6 +2790,9 @@ if (!isCreator) return replay(mess.botowner);
  reply('Leveling deactivated')
  } 
  break
+
+
+ /* ████ ✪ ███▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ [ Antilink ] ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓███ ✪ ███ */
 
  case 'antilinkgc': {
     if (isBan) return reply(mess.banned)	 			
@@ -3142,6 +3187,8 @@ case 'listonline': case 'listaktif': case 'here':{
     if (isBan) return reply(mess.banned)	 			
  if (isBanChat) return reply(mess.bangc)
  if (!m.isGroup) return replay(mess.grouponly)
+ A17.sendMessage(from, { react: { text: "🫡" , key: m.key }})
+
  let id = args && /\d+\-\d+@g.us/.test(args[0]) ? args[0] : m.chat
  let online = [...Object.keys(store.presences[id]), botNumber]
  let liston = 1
@@ -3153,6 +3200,8 @@ case 'listonline': case 'listaktif': case 'here':{
     if (isBan) return reply(mess.banned)	 			
 if (isBanChat) return reply(mess.bangc)
 if (!isCreator) return replay(mess.botowner)
+A17.sendMessage(from, { react: { text: "🫡" , key: m.key }})
+
 if (!args[0]) return replay(`Select add or del (add to ban, del to unban), For Example: Reply *${prefix}ban add* to the user you want to ban.`)
 if (args[1]) {
 orgnye = args[1] + "@s.whatsapp.net"
@@ -3198,20 +3247,9 @@ case 'happymod': {
  })
  }
  break
- case 'yts': case 'ytsearch': {
-    if (isBan) return reply(mess.banned)	 			
- if (isBanChat) return reply(mess.bangc)
- if (!args.join(" ")) return replay(`Example : -yts Heat waves`)
- let yts = require("@adiwajshing/keyed-db2")
- let search = await yts(args.join(" "))
- let teks = '```「 YouTube search Engine 」```\n\n Search Term: '+text+'\n\n'
- let no = 1
- for (let i of search.all) {
- teks += `Result No : ${no++}\n\nTitle : ${i.title}\n\nViews : ${i.views}\n\nDuration : ${i.timestamp}\n\nUploaded : ${i.ago}\n\nAuthor : ${i.author.name}\n\nUrl : ${i.url}\n\n\n-----------------------------------------------------------------------------\n\n\n`
- }
- A17.sendMessage(m.chat, { image: { url: search.all[0].thumbnail },  caption: teks }, { quoted: m })
- }
- break 
+
+
+ /* ████ ✪ ███▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ [ Group Mode ] ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓███ ✪ ███ */
 
  case 'setname': case 'setsubject': {
     if (isBan) return reply(mess.banned)	 			
@@ -3268,6 +3306,8 @@ if (isBanChat) return reply(mess.bangc)
  }
  break
 
+
+
  case 'tag': case 'tagall': case 'all':{
     if (isBan) return reply(mess.banned)	 			
  if (isBanChat) return reply(mess.bangc)
@@ -3284,6 +3324,8 @@ if (isBanChat) return reply(mess.bangc)
  }
  break
 
+
+
  case 'hidetag': case 'ping': {
     if (isBan) return reply(mess.banned)	 			
  if (isBanChat) return reply(mess.bangc)
@@ -3294,10 +3336,6 @@ if (isBanChat) return reply(mess.bangc)
  }
  break
 
-		
-		
-		
-		
 		
 		
 		case'tagadmins': case 'admins': case 'admin': {
@@ -3315,14 +3353,6 @@ if (isBanChat) return reply(mess.bangc)
  A17.sendMessage(m.chat, { text: teks, mentions: groupAdmins}, { quoted: m })
  }
  break
-		
-		
-		
-		
-		
-		
-		
-		
 		
 		
 /*
@@ -3513,6 +3543,7 @@ let mentioned = participants.map(v => v.jid)
      }
      break
 
+
      case 'demote': {
         if (isBan) return reply(mess.banned)	 			
      if (isBanChat) return reply(mess.bangc)
@@ -3524,6 +3555,7 @@ let mentioned = participants.map(v => v.jid)
      await A17.groupParticipantsUpdate(m.chat, [users], 'demote').then((res) => replay(jsonformat(res))).catch((err) => replay(jsonformat(err)))
      }
      break
+
 
      case 'remove':{
         if (isBan) return reply(mess.banned)	 			
@@ -3537,6 +3569,9 @@ let mentioned = participants.map(v => v.jid)
      }
      break
 
+
+
+     // join command  is a possible to Ban bot number.
 
      case 'join': {
         if (isBan) return reply(mess.banned)	 			
@@ -3681,6 +3716,13 @@ reply(`\`\`\`「 _Calculator Tool_ 」\`\`\`\n\n*Input :* ${qsd}\n*Calculation R
 }
 break
 
+
+
+
+/* ████ ✪ ███▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ [ Bot Mode ] ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓███ ✪ ███ */
+
+
+
 case 'public': {
     if (isBan) return reply(mess.banned)	 			
  if (isBanChat) return reply(mess.bangc)
@@ -3703,6 +3745,13 @@ case 'public': {
  A17.setStatus(`Mode : Self`)
  }
  break
+
+
+
+
+ /* ████ ✪ ███▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ [ Convert ] ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓███ ✪ ███ */
+
+
 
 
 case 'toimage': case 'makeimg': case 'toimg': {
@@ -3802,8 +3851,18 @@ case 'togif': case 'makegif': case 'getgif':{
  }
  break
 
+
+
+
+
+
+ /* ████ ✪ ███▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ [ Text Effects ] ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓███ ✪ ███ */
 		
-		
+
+
+
+
+
 		case 'candy': case 'christmas': case '3dchristmas': case 'sparklechristmas':
 case 'deepsea': case 'scifi': case 'rainbow': case 'waterpipe': case 'spooky': 
 case 'pencil': case 'circuit': case 'discovery': case 'metalic': case 'fiction': case 'demon': 
@@ -3886,7 +3945,7 @@ case 'lava': case 'rock': case 'bloodglas': case 'hallowen': case 'darkgold': ca
 break
 		
 		
-		case 'pornhub':{
+		case 'pornhub': case 'phub' :{
 	if (isBan) return reply(mess.banned)
     if (isBanChat) return reply(mess.bangc)
     A17.sendMessage(from, { react: { text: "🪄" , key: m.key }})
@@ -3954,7 +4013,7 @@ case 'google': case 'search': {
     if (isBan) return reply(mess.banned)	 			
  if (isBanChat) return reply(mess.bangc)
  A17.sendMessage(from, { react: { text: "✨" , key: m.key }})
- if (!args[0]) return reply(`Example: ${prefix + command} <query>\nUses : ${prefix + command} apa arti cinta`)
+ if (!args[0]) return reply(`Example: ${prefix + command} <query>\nUses : ${prefix + command} anything...`)
  let google = require('google-it')
  google({'query': args.join(" ")}).then(res => {
  let teks = `「 *Google Search Engine* 」\n\n*Search term:* ${text}\n\n\n`
@@ -4296,7 +4355,38 @@ reply(mess.error)
   A17.sendMessage(from, { audio: { url: A17tiktokaudio }, mimetype: 'audio/mp4' }, { quoted: m })
  }
 break
-		
+
+
+
+
+
+/* ████ ✪ ███▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ [ YT Media ] ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓███ ✪ ███ */
+
+
+
+
+
+case 'yts': case 'ytsearch': {
+    if (isBan) return reply(mess.banned)	 			
+ if (isBanChat) return reply(mess.bangc)
+ A17.sendMessage(from, { react: { text: "📍" , key: m.key }}) 
+
+ if (!args.join(" ")) return replay(`Example : -yts Heat waves`)
+ let yts = require("@adiwajshing/keyed-db2")
+ let search = await yts(args.join(" "))
+ let teks = '```「 YouTube search Engine 」```\n\n Search Term: '+text+'\n\n'
+ let no = 1
+ for (let i of search.all) {
+ teks += `Result No : ${no++}\n\nTitle : ${i.title}\n\nViews : ${i.views}\n\nDuration : ${i.timestamp}\n\nUploaded : ${i.ago}\n\nAuthor : ${i.author.name}\n\nUrl : ${i.url}\n\n\n-----------------------------------------------------------------------------\n\n\n`
+ }
+ A17.sendMessage(m.chat, { image: { url: search.all[0].thumbnail },  caption: teks }, { quoted: m })
+ }
+ break 
+
+
+
+
+/*
 		
 case 'music': case 'p': case 'play': case 'song': case 'ytplay': {
     if (isBan) return reply(mess.banned)	 			
@@ -4338,9 +4428,15 @@ case 'music': case 'p': case 'play': case 'song': case 'ytplay': {
  A17.sendMessage(m.chat, buttonMessage, { quoted: m })
  }
  break
- case 'ytad': {
+
+*/
+
+
+
+ case 'play': case 'song': case 'music': {
     if (isBan) return reply(mess.banned)	 			
     if (isBanChat) return reply(mess.bangc)
+    A17.sendMessage(from, { react: { text: "🍁" , key: m.key }}) 
     const YT=require('./lib/ytdlcore')
     let yts = require("@adiwajshing/keyed-db2")
     let search = await yts(text)
@@ -4350,9 +4446,14 @@ case 'music': case 'p': case 'play': case 'song': case 'ytplay': {
  await A17.sendMessage(from, {document: fs.readFileSync(ytmp3play.path),fileName: anu.title + '.mp3',mimetype: 'audio/mpeg',}, {quoted:m})
  }
  break 
- case 'ytvd': {
+
+
+
+
+ case 'ytvd': case 'video': case 'mp4': {
     if (isBan) return reply(mess.banned)	 			
  if (isBanChat) return reply(mess.bangc)
+ A17.sendMessage(from, { react: { text: "🍃" , key: m.key }})
  const YT=require('./lib/ytdlcore')
     let yts = require("@adiwajshing/keyed-db2")
     let search = await yts(text)
@@ -4360,7 +4461,11 @@ case 'music': case 'p': case 'play': case 'song': case 'ytplay': {
     const ytmp4play = await YT.mp4(anu.url)
  A17.sendMessage(from, {video:{url:ytmp4play.videoUrl}, mimetype:"video/mp4", caption:anu.title+' By *A17 MD*',}, {quoted:m})
  }
+
  break
+
+
+ /*
  case 'ytmp3': case 'ytmusic':  case 'ytmp4': case 'ytvideo': case 'ytdl':{
     if (isBan) return reply(mess.banned)	 			
  if (isBanChat) return reply(mess.bangc)
@@ -4395,7 +4500,9 @@ case 'music': case 'p': case 'play': case 'song': case 'ytplay': {
  A17.sendMessage(m.chat, buttonMessage, { quoted: m })
  }
  break 
- case 'ytad2': {
+*/
+
+ case 'ytmp3': {
     if (isBan) return reply(mess.banned)	 			
     if (isBanChat) return reply(mess.bangc)
     const YT=require('./lib/ytdlcore')
@@ -4405,7 +4512,7 @@ case 'music': case 'p': case 'play': case 'song': case 'ytplay': {
  }
  break
 
- case 'ytvd2': {
+ case 'ytvd2': case 'ytmp4': {
     if (isBan) return reply(mess.banned)	 			
  if (isBanChat) return reply(mess.bangc)
  const YT=require('./lib/ytdlcore')
@@ -4437,15 +4544,15 @@ case 'pinterest': case 'pin': {
  try {
  hx.pinterest(args.join(" ")).then(async(res) => {
  imgnyee = res[Math.floor(Math.random() * res.length)]
- let buttons = [
+ /* let buttons = [
  {buttonId: `${prefix}pinterest ${args.join(" ")}`, buttonText: {displayText: '>>'}, type: 1}
- ]
+ ] */
  let buttonMessage = {
  image: { url: imgnyee },
  caption:  `Title : ` + args.join(" ") + `\nMedia Url : `+imgnyee,
- footer: `${global.BotName}`,
+ /* footer: `${global.BotName}`,
  buttons: buttons,
- headerType: 4,
+ headerType: 4, */
  
  }
  A17.sendMessage(m.chat, buttonMessage, { quoted: m })
@@ -4729,7 +4836,7 @@ case 'charactercheck':
      ]
                    const A17dareww = dare[Math.floor(Math.random() * dare.length)]
                    buffer = await getBuffer(`https://images4.alphacoders.com/101/1016619.jpg`)
-                   A17.sendMessage(from, { image: buffer, caption: '*You have chosen Dare*\n\n'+ A17dareww }, {quoted:m})
+                   A17.sendMessage(from, { image: buffer, caption: '*You have chosen Dare...*\n\n'+ A17dareww }, {quoted:m})
                    break
                        
 
@@ -4831,8 +4938,13 @@ case 'truth':
              ]
                            const A17truthww = truth[Math.floor(Math.random() * truth.length)]
                            buffer = await getBuffer(`https://images2.alphacoders.com/650/650812.jpg`)
-                           A17.sendMessage(from, { image: buffer, caption: '*You have chosen Truth*\n'+ A17truthww }, {quoted:m})
+                           A17.sendMessage(from, { image: buffer, caption: '*You have chosen Truth...*\n'+ A17truthww }, {quoted:m})
                            break
+
+
+
+
+/* ████ ✪ ███▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ [ NSFW ] ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓███ ✪ ███ */
 
 
 
@@ -4924,14 +5036,14 @@ case 'trap' :
     if (!AntiNsfw) return reply(mess.nonsfw)
 reply(mess.waiting)
  waifudd = await axios.get(`https://waifu.pics/api/nsfw/${command}`)       
- let trapbot = [
+ /* let trapbot = [
     {buttonId: `${prefix}trap`, buttonText: {displayText: `>>`}, type: 1},
-    ]
+    ] */
   let button2Messages = {
    image: {url:waifudd.data.url},
    caption:  `Here it is...`,
-  buttons: trapbot,
-  headerType: 1
+ /* buttons: trapbot,
+  headerType: 1 */
   }     
             await A17.sendMessage(m.chat, button2Messages, { quoted:m }).catch(err => {
                     return('Error!')
@@ -4946,14 +5058,14 @@ case 'hneko' :
     if (!AntiNsfw) return reply(mess.nonsfw)
 reply(mess.waiting)
     waifudd = await axios.get(`https://waifu.pics/api/nsfw/neko`)
- let hnekobot = [
+ /* let hnekobot = [
     {buttonId: `${prefix + command}`, buttonText: {displayText: `>>`}, type: 1},
-    ]
+    ] */
   let button3Messages = {
    image: {url:waifudd.data.url},
    caption:  `Nyaah...`,
-  buttons: hnekobot,
-  headerType: 1
+  /* buttons: hnekobot,
+  headerType: 1 */
   }      
             await A17.sendMessage(m.chat, button3Messages, { quoted:m }).catch(err => {
                     return('Error!')
@@ -4968,14 +5080,14 @@ case 'hwaifu' :
     if (!AntiNsfw) return reply(mess.nonsfw)
 reply(mess.waiting)
     waifudd = await axios.get(`https://waifu.pics/api/nsfw/waifu`)         
- let nwaifubot = [
+ /* let nwaifubot = [
     {buttonId: `${prefix + command}`, buttonText: {displayText: `>>`}, type: 1},
-    ]
+    ] */
   let button4Messages = {
    image: {url:waifudd.data.url},
    caption:  `Here it is...`,
-  buttons: nwaifubot,
-  headerType: 1
+ /* buttons: nwaifubot,
+  headerType: 1 */
   }      
             await A17.sendMessage(m.chat, button4Messages, { quoted:m }).catch(err => {
                     return('Error!')
@@ -4989,15 +5101,15 @@ case 'gasm':
     if (!AntiNsfw) return reply(mess.nonsfw)
 reply(mess.waiting)						
  waifudd = await axios.get(`https://nekos.life/api/v2/img/${command}`)
-                           var wbuttsss = [
+                       /*    var wbuttsss = [
         {buttonId: `${prefix}gasm`, buttonText: {displayText: `>>`}, type: 1},
-        ]
+        ] */
       let buttonsssMessages = {
        image: {url:waifudd.data.url},
        caption:  `Here it is...`,
-      footer: `${global.BotName}`,
+     /* footer: `${global.BotName}`,
       buttons: wbuttsss,
-      headerType: 4
+      headerType: 4 */
       }     
             await A17.sendMessage(m.chat, buttonsssMessages,{ quoted:m }).catch(err => {
                     return('Error!')
@@ -5005,41 +5117,50 @@ reply(mess.waiting)
 break  
 
 
+
+/* ████ ✪ ███▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ [ Anime Mode ] ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓███ ✪ ███ */
+
+
+
 case 'smug2':
     if (isBan) return reply(mess.banned)	 			
     if (isBanChat) return reply(mess.bangc)
 reply(mess.waiting)						
  waifudd = await axios.get(`https://nekos.life/api/v2/img/smug`)
-                           var wbuttsss = [
+                    /*       var wbuttsss = [
         {buttonId: `${prefix}smug2`, buttonText: {displayText: `>>`}, type: 1},
-        ]
+        ] */
       let button1ssMessages = {
        image: {url:waifudd.data.url},
        caption:  `Here it is...`,
-      footer: `${global.BotName}`,
+    /*  footer: `${global.BotName}`,
       buttons: wbuttsss,
-      headerType: 4
+      headerType: 4 */
       }     
             await A17.sendMessage(m.chat, button1ssMessages,{ quoted:m }).catch(err => {
                     return('Error!')
                 })
 break
 
+
 case 'foxgirl':
     if (isBan) return reply(mess.banned)	 			
     if (isBanChat) return reply(mess.bangc)
     if (!m.isGroup) return replay(mess.grouponly)
+    A17.sendMessage(from, { react: { text: "✨" , key: m.key }})     
+
 reply(mess.waiting)							
  waifudd = await axios.get(`https://nekos.life/api/v2/img/fox_girl`)
-                           var wbuttsss = [
+
+             /* var wbuttsss = [
         {buttonId: `${prefix}foxgirl`, buttonText: {displayText: `>>`}, type: 1},
-        ]
+        ] */
       let button12ssMessages = {
        image: {url:waifudd.data.url},
-       caption:  `Awooo...`,
-      footer: `${global.BotName}`,
+       caption:  `Awoooo...`,
+      /* footer: `${global.BotName}`,
       buttons: wbuttsss,
-      headerType: 4
+      headerType: 4 */
       }     
             await A17.sendMessage(m.chat, button12ssMessages,{ quoted:m }).catch(err => {
                     return('Error!')
@@ -5052,14 +5173,14 @@ case 'animenom' :
     if (!m.isGroup) return replay(mess.grouponly)
 reply(mess.waiting)
     waifudd = await axios.get(`https://waifu.pics/api/sfw/nom`)
- let xxhnekobot = [
+  /*  let xxhnekobot = [
     {buttonId: `${prefix}animenom`, buttonText: {displayText: `>>`}, type: 1},
-    ]
+    ]  */
   let xx1button3Messages = {
    image: {url:waifudd.data.url},
    caption:  `Here it is...`,
-  buttons: xxhnekobot,
-  headerType: 1
+/*  buttons: xxhnekobot,
+  headerType: 1 */
   }      
             await A17.sendMessage(m.chat, xx1button3Messages, { quoted:m }).catch(err => {
                     return('Error!')
@@ -5072,15 +5193,15 @@ case 'waifu3':
     if (!m.isGroup) return replay(mess.grouponly)
 reply(mess.waiting)						
  waifudd = await axios.get(`https://nekos.life/api/v2/img/waifu`)
-                           var wbuttsss = [
+                   /*        var wbuttsss = [
         {buttonId: `${prefix}waifu3`, buttonText: {displayText: `>>`}, type: 1},
-        ]
+        ] */
       let button112ssMessages = {
        image: {url:waifudd.data.url},
        caption:  `Here it is...`,
-      footer: `${global.BotName}`,
+   /*   footer: `${global.BotName}`,
       buttons: wbuttsss,
-      headerType: 4
+      headerType: 4 */
       }     
             await A17.sendMessage(m.chat, button112ssMessages,{ quoted:m }).catch(err => {
                     return('Error!')
@@ -5093,15 +5214,18 @@ case 'crossplay': case 'crosplay': case 'cosplay':
     if (isBan) return reply(mess.banned)	 			
     if (isBanChat) return reply(mess.bangc)
     if (!m.isGroup) return replay(mess.grouponly)
-                const buttons = [
+    A17.sendMessage(from, { react: { text: "✨" , key: m.key }})  
+
+             /*   const buttons = [
         {buttonId: '-crossplay', buttonText: {displayText: '>>'}, type: 1},
-            ]               
+            ]     */     
+
         const cosplybutton = {
         image: {url: 'https://fantox-cosplay-api.onrender.com/'},
         caption: "Guess who am i...",
-        footer: `${global.BotName}`,
+       /* footer: `${global.BotName}`,
         buttons: buttons,
-        headerType: 4
+        headerType: 4 */
         }
                   
         await A17.sendMessage(m.chat,cosplybutton, { quoted:m }).catch(err => {
@@ -5117,7 +5241,8 @@ case 'neko2':
     if (isBan) return reply(mess.banned)	 			
     if (isBanChat) return reply(mess.bangc)
     if (!m.isGroup) return replay(mess.grouponly)
-reply(mess.waiting)							
+reply(mess.waiting)					
+		
    waifud = await axios.get('https://waifu.pics/api/sfw/neko')
                 var wbutsss = [
         {buttonId: `${prefix}neko2`, buttonText: {displayText: `>>`}, type: 1},
@@ -5429,15 +5554,15 @@ if (isBanChat) return reply(mess.bangc)
 if (!m.isGroup) return replay(mess.grouponly)
 reply(mess.waiting)							
 ud = await axios.get('https://waifu.pics/api/sfw/megumin')
-var wbutsss = [
+/*var wbutsss = [
     {buttonId: `${prefix}megumin`, buttonText: {displayText: `>>`}, type: 1},
-         ]
+         ] */
       let buttonzMessage = {
       image: {url:ud.data.url},
        caption:  `Here it is...`,
-      footer: `${global.BotName}`,
+   /*   footer: `${global.BotName}`,
           buttons: wbutsss,
-     headerType: 4
+     headerType: 4 */
                       }
 await A17.sendMessage(m.chat,buttonzMessage, { quoted:m }).catch(err => {
      return('Error!')
@@ -5448,17 +5573,20 @@ case 'awoo':
     if (isBan) return reply(mess.banned)	 			
     if (isBanChat) return reply(mess.bangc)
     if (!m.isGroup) return replay(mess.grouponly)
+    A17.sendMessage(from, { react: { text: "✨" , key: m.key }}) 
+
     reply(mess.waiting)						
  waifudd = await axios.get(`https://waifu.pics/api/sfw/awoo`)
- var wbuttsss = [
+/* var wbuttsss = [
     {buttonId: `${prefix}awoo`, buttonText: {displayText: `>>`}, type: 1},
-    ]
+    ] */
   let button1Messages = {
    image: {url:waifudd.data.url},
    caption:  `Here it is...`,
-   footer: `${global.BotName}`,
+ /*  footer: `${global.BotName}`,
   buttons: wbuttsss,
-  headerType: 2
+  headerType: 2 */
+  
   }       
             await A17.sendMessage(m.chat, button1Messages, { quoted:m }).catch(err => {
                     return('Error!')
@@ -5543,6 +5671,7 @@ const { Anime } =require("@shineiichijo/marika")
 A17.sendMessage(m.chat,{image:{url:result.images.jpg.large_image_url},caption:details},{quoted:m})   
 break
 
+
 case 'manga':
     if (isBan) return reply(mess.banned)	 			
     if (isBanChat) return reply(mess.bangc)
@@ -5588,14 +5717,14 @@ case 'waifu' :
     if (!m.isGroup) return replay(mess.grouponly)
 reply(mess.waiting)	
     waifuddd = await axios.get('https://waifu.pics/api/sfw/waifu')
- var wbuttsssr = [
+ /*var wbuttsssr = [
     {buttonId: `${prefix}waifu`, buttonText: {displayText: `>>`}, type: 1},
-    ]
+    ] */
         let button4Messagess = {
         image: {url:waifuddd.data.url},
         caption: 'More than one waifu will definitely ruin your Laifu!',
-        buttons: wbuttsssr,
-        headerType: 4
+        /*buttons: wbuttsssr,
+        headerType: 4 */
          }     
                                   
     await A17.sendMessage(m.chat, button4Messagess, { quoted:m }).catch(err => {
@@ -5609,14 +5738,14 @@ case 'neko' :
     if (!m.isGroup) return replay(mess.grouponly)
 reply(mess.waiting)	
     waifuddd = await axios.get('https://waifu.pics/api/sfw/neko')
- var wbuttsssr = [
+ /*var wbuttsssr = [
     {buttonId: `${prefix}neko`, buttonText: {displayText: `>>`}, type: 1},
-    ]
+    ] */
         let buttonMessagessf = {
         image: {url:waifuddd.data.url},
         caption: 'Nyaa...',
-        buttons: wbuttsssr,
-        headerType: 2
+    /*    buttons: wbuttsssr,
+        headerType: 2  */
          }     
                                   
     await A17.sendMessage(m.chat, buttonMessagessf, { quoted:m }).catch(err => {
@@ -5631,14 +5760,14 @@ case 'loli' :
     if (!m.isGroup) return replay(mess.grouponly)
 reply(mess.waiting)	
     waifuddd = await axios.get('https://waifu.pics/api/sfw/shinobu')
- var wbuttsssr = [
+ /* var wbuttsssr = [
     {buttonId: `${prefix}loli`, buttonText: {displayText: `>>`}, type: 1},
-    ]
+    ] */
         let buttonMessagessfgr = {
         image: {url:waifuddd.data.url},
         caption: 'Dont be a lolicon !',
-        buttons: wbuttsssr,
-        headerType: 2
+      /*  buttons: wbuttsssr,
+        headerType: 2 */
          }     
                                   
     await A17.sendMessage(m.chat, buttonMessagessfgr, { quoted:m }).catch(err => {
@@ -5959,13 +6088,10 @@ case '':
     if (isBan) return reply(mess.banned)	 			
     if (isBanChat) return reply(mess.bangc)
     A17.sendMessage(from, { react: { text: "✨" , key: m.key }})
-
-      A17pic ='https://images5.alphacoders.com/106/1065278.jpg'
-    
         
- const needhelpmenu = `Do you need help ${pushname} ? Type *${prefix}help* to get my full command list.`
+ reply(`Do you need any help ${pushname} ? Type *${prefix}help* to get my full command list.`)
     }
-       
+    
 break 
 
 
@@ -6059,6 +6185,10 @@ case 'weather':
     break;
 
 
+/* ████ ✪ ███▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ [ QR  ] ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓███ ✪ ███ */
+
+
+
     case 'qr': case 'scanner': case 'qrcode':
         if (isBan) return reply(mess.banned)	 			
         if (isBanChat) return reply(mess.bangc)
@@ -6067,15 +6197,15 @@ case 'weather':
 		
     reply(`Running repl....Please wait until repl.it responds...`)						
     var replqr =  await getBuffer(`https://a17-qr-scanner.broken0007.repl.co/`)
-                               var qrbutton = [
+                       /*        var qrbutton = [
             {buttonId: `${prefix}qr`, buttonText: {displayText: `Tap to Re-run Repl`}, type: 1}
-            ]
+            ] */
           let bmffg = {
            image: replqr,
            caption:  `Scan the qr within 10-15 seconds...`,
-          footer: `${global.BotName}`,
+      /*    footer: `${global.BotName}`,
           buttons: qrbutton,
-          headerType: 4
+          headerType: 4 */
           }     
                 await A17.sendMessage(m.chat, bmffg,{ quoted:m }).catch(err => {
                         return('Error!')

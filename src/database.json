@@ -914,6 +914,56 @@
       "afkTime": -1,
       "afkReason": "",
       "limit": 100
+    },
+    "918848913022@s.whatsapp.net": {
+      "afkTime": -1,
+      "afkReason": "",
+      "limit": 100
+    },
+    "918086169170@s.whatsapp.net": {
+      "afkTime": -1,
+      "afkReason": "",
+      "limit": 100
+    },
+    "918593074023@s.whatsapp.net": {
+      "afkTime": -1,
+      "afkReason": "",
+      "limit": 100
+    },
+    "919895599342@s.whatsapp.net": {
+      "afkTime": -1,
+      "afkReason": "",
+      "limit": 100
+    },
+    "917047584741@s.whatsapp.net": {
+      "afkTime": -1,
+      "afkReason": "",
+      "limit": 100
+    },
+    "919735940276@s.whatsapp.net": {
+      "afkTime": -1,
+      "afkReason": "",
+      "limit": 100
+    },
+    "917086726371@s.whatsapp.net": {
+      "afkTime": -1,
+      "afkReason": "",
+      "limit": 100
+    },
+    "917003213983@s.whatsapp.net": {
+      "afkTime": -1,
+      "afkReason": "",
+      "limit": 100
+    },
+    "918010431346@s.whatsapp.net": {
+      "afkTime": -1,
+      "afkReason": "",
+      "limit": 100
+    },
+    "919362639362@s.whatsapp.net": {
+      "afkTime": -1,
+      "afkReason": "",
+      "limit": "Infinity"
     }
   },
   "READ": false,
@@ -958,6 +1008,14 @@
         "templateDocument": true
       },
       "917679747455@s.whatsapp.net": {
+        "status": 0,
+        "autobio": false,
+        "templateImage": false,
+        "templateGif": false,
+        "templateMsg": false,
+        "templateDocument": true
+      },
+      "916297175943@s.whatsapp.net": {
         "status": 0,
         "autobio": false,
         "templateImage": false,
@@ -1010,6 +1068,14 @@
         "templateDocument": true
       },
       "917679747455@s.whatsapp.net": {
+        "status": 0,
+        "autobio": false,
+        "templateImage": false,
+        "templateGif": false,
+        "templateMsg": false,
+        "templateDocument": true
+      },
+      "916297175943@s.whatsapp.net": {
         "status": 0,
         "autobio": false,
         "templateImage": false,
