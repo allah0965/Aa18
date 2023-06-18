@@ -1,5 +1,6 @@
 node_modules
 session.json
 yarn-error.log
+package-lock.json
 yarn.lock
 A17-session
