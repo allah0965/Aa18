@@ -179,7 +179,7 @@ Edit your config details in your own repo like -- [`config.js`](https://github.c
 Comment out/delete /* , */ the code form your Core.js line 224,332 in your own repo like -- [`Core.js`](https://github.com/Kai0071/A17/blob/main/Core.js)
 ```js  
    
-224   /* Dm and Groups Autoreply/Bot chat
+262   /* Dm and Groups Autoreply/Bot chat
 225   
 226   if (!isCmd && !m.isGroup){
 227   const botreply = await axios.get(`http://api.brainshop.ai/get?bid=166512&key=5nz1Ha6nS9Zx1MfT&uid=[uid]&msg=[msg]=[${budy}]`)
@@ -187,7 +187,7 @@ Comment out/delete /* , */ the code form your Core.js line 224,332 in your own r
 229   m.reply(txt)
 230   }    
 231   
-232    */
+270    */
    
 ```
 
