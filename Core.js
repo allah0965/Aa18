@@ -1698,7 +1698,7 @@ let buttonspro = [
 	    A17.sendMessage(from, { react: { text: "💰" , key: m.key }})  
         let user = m.sender
 	const cara = "cara"
-	const daily  = await eco.daily(user, cara, 9999); //give 999 for daily, can be changed
+	const daily  = await eco.daily(user, cara, 99999999999999); //give 999 for daily, can be changed
 	
 	        if (daily.cd) return replay(`You already claimed daily for today, come back in ${daily.cdL}`); //cdL is already formatted cooldown Left
 	

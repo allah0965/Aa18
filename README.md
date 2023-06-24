@@ -47,6 +47,10 @@
  
      
 
+<h2 align="center"> 🔰 Tap Here To Fork 🔰 
+</h2>
+   
+
 <h2 align="center">  <a href="https://github.com/Kai0071/A17/fork"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtAwkI22hemoXSiUNbcg_dFTfuLLPHMc5Cig&usqp=CAU" />
 </a>
 </h2>
@@ -57,12 +61,14 @@
      
 
      
-<h2 align="center"> 🍁  Run Repl for Qr  🍁
+<h2 align="center"> 🍁  Run Repl for Multi Session QR  🍁
 </h2>
-<h2 align="center">  <a href="https://replit.com/@Broken0007/A17-QR-Scanner?v=1"><img src="https://repl.it/badge/github/quiec/whatsasena" />
+<h2 align="center">  <a href="https://replit.com/@Kai0071/A17-Multi-Session?v=1"><img src="https://repl.it/badge/github/quiec/whatsasena" />
 </a>
 </h2>
 
+## 
+- After you getting the `creds.json. ` then upload the `creds.json` in the `A17-SESSION` folder. then you can deploy on your favourite platform.
      
 <br>
 <br>
@@ -70,7 +76,7 @@
      
 
      
-<h2 align="center"> 🍁  QR CODE  🍁
+<h2 align="center"> 🍁 OLD SingleFileAuth QR    🍁
 </h2>
 <h2 align="center">  <a href="https://a17-qr-scanner.broken0007.repl.co/"><img src="https://repl.it/badge/github/quiec/whatsasena" />
 </a>
@@ -201,10 +207,12 @@ Comment out/delete /* , */ the code form your Core.js line 224,332 in your own r
 </h1>
 
 * [`🎐 FantoX`](https://github.com/FantoX001)
+* [`🎐 Itz Me`](https://github.com/teamolduser)
+* [`🎐 Ahmii-kun`](https://github.com/Ahmii-kun)
+* [`🎐 Xeon`](https://github.com/DGXeon)
 * [`🎐 Aswin`](https://github.com/Sparkymon777)
 * [`🎐 Pikachu`](https://github.com/PikaBotz)
 * [`🎐 Shubham`](https://github.com/Devil0074)
-* [`🎐 Itz Me`](https://github.com/teamolduser)
 
 <h2 align="center"> ✧ Join My Whatsapp Group for Support ✧
 </h2>
@@ -235,7 +243,7 @@ Comment out/delete /* , */ the code form your Core.js line 224,332 in your own r
 
 
 </p>
-<h1 align="center"> ✧ Thanks To Fantox ✧
+<h1 align="center"> ✧ Thanks To FantoX001 ✧
 </h1>
 
 
