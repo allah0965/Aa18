@@ -23,7 +23,7 @@
  "author": "Kai (Kai0071)",
  "license": "MIT",
  "dependencies": {
-  "@whiskeysockets/baileys": "^6.2.1",
+  "@whiskeysockets/baileys": "^6.3.1",
   "@adiwajshing/baileys2": "npm:@queenanya/ytdlcore",
   "@adiwajshing/keyed-db": "^0.2.4",
   "@adiwajshing/keyed-db2": "npm:@queenanya/ytsearch",
