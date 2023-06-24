@@ -23,7 +23,6 @@
  "author": "Kai (Kai0071)",
  "license": "MIT",
  "dependencies": {
-  "@whiskeysockets/baileys": "^6.2.0",
   "@adiwajshing/baileys2": "npm:@queenanya/ytdlcore",
   "@adiwajshing/keyed-db": "^0.2.4",
   "@adiwajshing/keyed-db2": "npm:@queenanya/ytsearch",
@@ -111,5 +110,8 @@
  "bugs": {
   "url": "https://github.com/Kai0071/A17/issues"
  },
- "homepage": "https://github.com/Kai0071/A17#readme"
+ "homepage": "https://github.com/Kai0071/A17#readme",
+ "devDependencies": {
+  "@whiskeysockets/baileys": "^6.3.0"
+ }
 }
