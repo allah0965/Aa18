@@ -26,7 +26,6 @@
   "devDependencies": {
     "@adiwajshing/keyed-db": "^0.2.4",
     "@hapi/boom": "^10.0.1",
-    "@adiwajshing/baileys": "git+https://github.com/WhiskeySockets/Baileys",
     "jimp": "^0.16.13",
     "pino": "^8.14.1",
     "qrcode-terminal": "^0.12.0"
