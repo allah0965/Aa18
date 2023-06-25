@@ -3,8 +3,8 @@
 
 process.on('uncaughtException', console.error)
 require("./config")
-const { BufferJSON, WA_DEFAULT_EPHEMERAL, generateWAMessageFromContent, proto, generateWAMessageContent, generateWAMessage, prepareWAMessageMedia, areJidsSameUser, getContentType, WAFlag } = require('@whiskeysockets/baileys')
-const zA17 = require("@whiskeysockets/baileys")
+const { BufferJSON, WA_DEFAULT_EPHEMERAL, generateWAMessageFromContent, proto, generateWAMessageContent, generateWAMessage, prepareWAMessageMedia, areJidsSameUser, getContentType, WAFlag } = require("@adiwajshing/baileys")
+const zA17 = require("@adiwajshing/baileys")
 const fs = require('fs')
 const Jimp = require('jimp') // for f dp
 const util = require('util')

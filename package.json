@@ -26,13 +26,13 @@
   "devDependencies": {
     "@adiwajshing/keyed-db": "^0.2.4",
     "@hapi/boom": "^10.0.1",
-    "@whiskeysockets/baileys": "^6.3.0",
-    "@adiwajshing/baileys": "npm@whiskeysockets/baileys@6.3.0",
+    "@adiwajshing/baileys": "git+https://github.com/WhiskeySockets/Baileys",
     "jimp": "^0.16.13",
     "pino": "^8.14.1",
     "qrcode-terminal": "^0.12.0"
   },
   "dependencies": {
+    "@adiwajshing/baileys": "git+https://github.com/WhiskeySockets/Baileys",
     "@adiwajshing/keyed-db": "^0.2.4",
     "@bochilteam/scraper": "^4.2.3",
     "@develoka/angka-terbilang-js": "^1.4.2",
@@ -40,7 +40,6 @@
     "@shineiichijo/mal-news-scraper": "^0.0.2",
     "@shineiichijo/marika": "^2.0.6",
     "@shineiichijo/nhentai-pdf": "^1.0.5",
-    "@whiskeysockets/baileys": "^6.3.0",
     "anime-wallpaper": "^1.1.1",
     "awesome-phonenumber": "^5.10.0",
     "axios": "^1.4.0",

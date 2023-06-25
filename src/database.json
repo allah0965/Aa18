@@ -1094,6 +1094,11 @@
       "afkTime": -1,
       "afkReason": "",
       "limit": 100
+    },
+    "22548132639@s.whatsapp.net": {
+      "afkTime": -1,
+      "afkReason": "",
+      "limit": 100
     }
   },
   "READ": false,
