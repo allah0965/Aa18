@@ -1698,7 +1698,7 @@ let buttonspro = [
 	    A17.sendMessage(from, { react: { text: "💰" , key: m.key }})  
         let user = m.sender
 	const cara = "cara"
-	const daily  = await eco.daily(user, cara, 99999999999999); //give 999 for daily, can be changed
+	const daily  = await eco.daily(user, cara, 999); //give 999 for daily, can be changed
 	
 	        if (daily.cd) return replay(`You already claimed daily for today, come back in ${daily.cdL}`); //cdL is already formatted cooldown Left
 	
@@ -4372,7 +4372,7 @@ case 'yts': case 'ytsearch': {
  A17.sendMessage(from, { react: { text: "📍" , key: m.key }}) 
 
  if (!args.join(" ")) return replay(`Example : -yts Heat waves`)
- let yts = require("@adiwajshing/keyed-db2")
+ let yts = require("youtube-yts")
  let search = await yts(args.join(" "))
  let teks = '```「 YouTube search Engine 」```\n\n Search Term: '+text+'\n\n'
  let no = 1
@@ -4429,7 +4429,7 @@ case 'music': case 'p': case 'play': case 'song': case 'ytplay': {
  }
  break
 
-*/
+*/ 
 
 
 
@@ -4437,15 +4437,15 @@ case 'music': case 'p': case 'play': case 'song': case 'ytplay': {
     if (isBan) return reply(mess.banned)	 			
     if (isBanChat) return reply(mess.bangc)
     A17.sendMessage(from, { react: { text: "🍁" , key: m.key }}) 
-    const YT=require('./lib/ytdlcore')
-    let yts = require("@adiwajshing/keyed-db2")
+    const YT=require('./lib/ytdl-core')
+    let yts = require("youtube-yts")
     let search = await yts(text)
     let anu = search.videos[0]
     const ytmp3play = await YT.mp3(anu.url)
     
- await A17.sendMessage(from, {document: fs.readFileSync(ytmp3play.path),fileName: anu.title + '.mp3',mimetype: 'audio/mpeg',}, {quoted:m})
+ await A17.sendMessage(from, {audio: fs.readFileSync(ytmp3play.path),fileName: anu.title + '.mp3',mimetype: 'audio/mpeg',}, {quoted:m})
  }
- break 
+ break
 
 
 
@@ -4454,8 +4454,8 @@ case 'music': case 'p': case 'play': case 'song': case 'ytplay': {
     if (isBan) return reply(mess.banned)	 			
  if (isBanChat) return reply(mess.bangc)
  A17.sendMessage(from, { react: { text: "🍃" , key: m.key }})
- const YT=require('./lib/ytdlcore')
-    let yts = require("@adiwajshing/keyed-db2")
+ const YT=require('./lib/ytdl-core')
+    let yts = require("youtube-yts")
     let search = await yts(text)
     let anu = search.videos[0]
     const ytmp4play = await YT.mp4(anu.url)
@@ -4505,7 +4505,7 @@ case 'music': case 'p': case 'play': case 'song': case 'ytplay': {
  case 'ytmp3': {
     if (isBan) return reply(mess.banned)	 			
     if (isBanChat) return reply(mess.bangc)
-    const YT=require('./lib/ytdlcore')
+    const YT=require('./lib/ytdl-core')
     const ytmp3play2 = await YT.mp3(text)
     
  await A17.sendMessage(from, {document: fs.readFileSync(ytmp3play2.path),fileName:'A17_YTmp3_Downloader.mp3',mimetype: 'audio/mpeg',}, {quoted:m})
@@ -4515,7 +4515,7 @@ case 'music': case 'p': case 'play': case 'song': case 'ytplay': {
  case 'ytvd2': case 'ytmp4': {
     if (isBan) return reply(mess.banned)	 			
  if (isBanChat) return reply(mess.bangc)
- const YT=require('./lib/ytdlcore')
+ const YT=require('./lib/ytdl-core')
     const ytmp4play2 = await YT.mp4(text)
  A17.sendMessage(from, {video:{url:ytmp4play2.videoUrl}, mimetype:"video/mp4", caption:'Downloaded by *A17 MD*',}, {quoted:m})
  }
@@ -6257,7 +6257,7 @@ if (budy.startsWith('$')) {
 if (!isCreator) return replay(mess.botowner)
 exec(budy.slice(2), (err, stdout) => {
 if(err) return A17.sendMessage(from, {image:ErrorPic, caption:String(err)}, {quoted:m})
-if (stdout) return replay(stdout)
+if (stdout) return replayH(stdout)
 })
 }
 
